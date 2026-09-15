@@ -1,0 +1,17 @@
+name: PortakalWelcomer
+version: '1.0-Slotted'
+main: org.noobfly.portakalwelcomer.PortakalWelcomer
+api-version: '26.2'
+folia-supported: true
+description: Karsilama sinematik sistemi.
+
+commands:
+  portakalwelcomer:
+    description: Karsilama sinematigini test eder.
+    usage: /portakalwelcomer test
+    permission: portakalwelcomer.admin
+
+permissions:
+  portakalwelcomer.admin:
+    description: PortakalWelcomer test komutunu kullanma yetkisi.
+    default: op
