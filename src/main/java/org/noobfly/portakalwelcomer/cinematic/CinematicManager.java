@@ -1,5 +1,6 @@
 package org.noobfly.portakalwelcomer.cinematic;
 
+import org.noobfly.portakalwelcomer.util.ChatStyle;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
@@ -46,14 +47,14 @@ public final class CinematicManager {
 
     public void startTest(Player player) {
         if (this.isInCinematic(player)) {
-            player.sendMessage("§cZaten bir sinematik icindesin.");
+            player.sendMessage(ChatStyle.error("Zaten bir sinematik içindesin."));
             return;
         }
 
         World resolvedWorld = Bukkit.getWorld(WORLD_NAME);
         if (resolvedWorld == null) {
             resolvedWorld = player.getWorld();
-            player.sendMessage("§c\"" + WORLD_NAME + "\" dunyasi bulunamadi, mevcut dunyada gosteriliyor.");
+            player.sendMessage(ChatStyle.error("\"{}\" dünyası bulunamadı, mevcut dünyada gösteriliyor.", WORLD_NAME));
         }
         final World world = resolvedWorld;
 
@@ -82,8 +83,8 @@ public final class CinematicManager {
 
             player.setGameMode(GameMode.SPECTATOR);
             player.setSpectatorTarget(camera);
-            player.sendMessage("§6Karsilama sinematigi basliyor...");
-            player.sendMessage("§7» §e" + first.name());
+            player.sendMessage(ChatStyle.info("Karşılama sinematiği başlıyor..."));
+            player.sendMessage(ChatStyle.info("<d>» </d>{}", first.name()));
 
             camera.getScheduler().runAtFixedRate(this.plugin, task -> this.tick(session),
                     () -> this.activeSessions.remove(player.getUniqueId(), session), 1L, 1L);
@@ -171,7 +172,7 @@ public final class CinematicManager {
             session.setMoveDurationTicks(NEAR_GLIDE_TICKS);
         }
 
-        session.getPlayer().sendMessage("§7» §e" + next.name());
+        session.getPlayer().sendMessage(ChatStyle.info("<d>» </d>{}", next.name()));
         session.setPhase(CinematicSession.Phase.MOVE);
     }
 
@@ -190,7 +191,7 @@ public final class CinematicManager {
             player.setSpectatorTarget(null);
             player.setGameMode(session.getPreviousGameMode());
             player.teleportAsync(session.getPreviousLocation());
-            player.sendMessage("§6Karsilama sinematigi bitti.");
+            player.sendMessage(ChatStyle.info("Karşılama sinematiği bitti."));
         }, null);
     }
 
