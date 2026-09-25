@@ -193,14 +193,30 @@ public final class ChatStyle {
             }
         }
         String[] lines = template.split("\n", -1);
+        // işaret/etiket ilk dolu satıra konur: "\nParkur etkinliği..." gibi boş satırla başlayan blok mesajlarda
+        // ■ tek başına boş satırda kalmasın. Satırın girintisi işaretten önce korunur ("   ■ ARENA: ...").
+        int headLine = 0;
+        while (headLine < lines.length - 1 && lines[headLine].isBlank()) {
+            headLine++;
+        }
         int[] argIndex = {0};
         for (int i = 0; i < lines.length; i++) {
             if (i > 0) {
                 out.append(Component.newline());
-            } else {
+            }
+            String text = lines[i];
+            if (i == headLine) {
+                int indent = 0;
+                while (indent < text.length() && text.charAt(indent) == ' ') {
+                    indent++;
+                }
+                if (indent > 0) {
+                    out.append(Component.text(text.substring(0, indent)));
+                    text = text.substring(indent);
+                }
                 out.append(head(kind, label));
             }
-            out.append(line(lines[i], args, argIndex, Role.BODY));
+            out.append(line(text, args, argIndex, Role.BODY));
         }
         return out.build();
     }
