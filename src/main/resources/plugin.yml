@@ -3,12 +3,14 @@ version: '1.0-Slotted'
 main: org.noobfly.portakalwelcomer.PortakalWelcomer
 api-version: '26.2'
 folia-supported: true
-description: Karsilama sinematik sistemi.
+description: Ilk giris tanitim sinematigi.
+depend: [packetevents]
 
 commands:
   portakalwelcomer:
-    description: Karsilama sinematigini test eder.
-    usage: /portakalwelcomer test
+    description: Tanitim ve kamera testleri.
+    usage: /portakalwelcomer <tanitim [oyuncu]|kilit|sinematik|olum|birak [oyuncu]>
+    aliases: [pwc]
     permission: portakalwelcomer.admin
 
 permissions:

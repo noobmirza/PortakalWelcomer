@@ -1,0 +1,8 @@
+tanitim:
+  ilk-giriste: true
+
+olum-kamerasi:
+  acik: true
+  sure-saniye: 7
+  ozel-ekran: true
+  ses: "portakalsounds:olumcani"
