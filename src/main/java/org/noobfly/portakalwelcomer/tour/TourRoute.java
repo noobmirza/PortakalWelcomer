@@ -54,6 +54,33 @@ final class TourRoute {
                                 "Kendine güveniyorsan gir, ama eşyalarını kaybetmeye hazır ol."),
                         new Vector(489.5, 117.6, 572.0), new Vector(489.5, 117.0, 577.5), 3.5, 0.8, 100, PLAZA),
 
+                TourStop.path(GUIDE, GUIDE_PORTRAIT, List.of(
+                                "Burası {Balıkçı Rıhtımı}. Bu koyda hamsiden iki tonluk {Kadim Ejder Balığı}'na kadar {21 tür} balık yaşar.",
+                                "Bu balıklar sadece sen {rıhtımın içindeyken} oltana gelir. Rıhtımın dışında deniz sıradan, eski usul balık verir.",
+                                "Denize girmene gerek yok, oltanı rıhtımdan at yeter. Gerisini buranın balıkçıları sana anlatır."),
+                        new Vector(453.5, 81.62, 675.5), new Vector(453.5, 81.62, 777.5), new Vector(453.5, 80.5, 809.5),
+                        260, new Vector(453.5, 80.0, 726.5)),
+
+                TourStop.path("Yaşlı Balıkçı", "bal_yasli", List.of(
+                                "Hoş geldin yolcu. Ben {Yaşlı Balıkçı}, kırk yıldır bu koyda balık tutarım.",
+                                "Balık nasıl tutulur, oltanın ve balığın üstündeki yazılar ne demek, merak ettiğin her şeyi bana sorabilirsin."),
+                        new Vector(452.5, 81.62, 784.5), new Vector(455.5, 80.62, 787.5), new Vector(457.6, 80.7, 789.6), 160),
+
+                TourStop.path("Olta Ustası", "bal_usta", List.of(
+                                "Ben {Olta Ustası}. Oltalar benden çıkar, ilk {Basit Olta} da benden hediye.",
+                                "Balık tuttukça ve para biriktirdikçe oltan {21 seviyeye} kadar yükselir. Tuttuğun balıkları da market değil, {ben alırım}."),
+                        new Vector(425.5, 80.62, 799.5), new Vector(425.5, 80.62, 806.0), new Vector(425.5, 80.7, 809.5), 160),
+
+                TourStop.path("Balık Bilgini", "bal_bilgin", List.of(
+                                "Ben {Balık Bilgini}. Bu sularda tuttuğun her türü deftere yazarım.",
+                                "Bir türün en ağırını tutarsan adın {sunucu rekoru} olarak kalır, herkes duyar."),
+                        new Vector(453.5, 80.62, 800.5), new Vector(453.5, 80.62, 806.0), new Vector(453.5, 80.7, 809.5), 160),
+
+                TourStop.path("Yemci", "bal_yemci", List.of(
+                                "Taze yem, taze! Ben {Yemci}. {Canlı} da var {cansız} da.",
+                                "Yem şart değil, ama iyi yem balığı çabuk getirir, kaçmasını da zorlaştırır."),
+                        new Vector(481.5, 80.62, 800.5), new Vector(481.5, 80.62, 806.0), new Vector(481.5, 80.7, 809.4), 160),
+
                 TourStop.path("Şaman", "saman", List.of(
                                 "Ben {Şaman}. Görevlerimi ve eşya isteklerimi yerine getirenlere {özel eşyalar} veririm.",
                                 "Mesela {Zümrüdün Şifa Kitabı}, bir zombi köylüyü anında normal köylüye çevirir. İşin düştüğünde beni burada bulursun."),

@@ -26,7 +26,12 @@ public record TourStop(String speaker, String portrait, List<String> pages, Func
 
     public static TourStop path(String speaker, String portrait, List<String> pages,
                                 Vector from, Vector to, Vector focus, int ticks) {
-        return new TourStop(speaker, portrait, pages, previous -> StopShot.dolly(from, to, focus, ticks), feet(to), ticks, false);
+        return path(speaker, portrait, pages, from, to, focus, ticks, feet(to));
+    }
+
+    public static TourStop path(String speaker, String portrait, List<String> pages,
+                                Vector from, Vector to, Vector focus, int ticks, Vector anchor) {
+        return new TourStop(speaker, portrait, pages, previous -> StopShot.dolly(from, to, focus, ticks), anchor, ticks, false);
     }
 
     public static TourStop glide(String speaker, String portrait, List<String> pages,
