@@ -86,6 +86,34 @@ final class TourRoute {
                                 "Mesela {Zümrüdün Şifa Kitabı}, bir zombi köylüyü anında normal köylüye çevirir. İşin düştüğünde beni burada bulursun."),
                         new Vector(465.5, 94.62, 478.5), new Vector(453.5, 92.62, 478.5), new Vector(449.0, 91.7, 478.0), 180),
 
+                TourStop.path(GUIDE, GUIDE_PORTRAIT, List.of(
+                                "Burası {Park}. Arkadaşlarınla buluşup {mini oyunlarla} kozunu paylaşabileceğin yer.",
+                                "Buraya istediğin zaman {/warp park} ile gelebilirsin."),
+                        new Vector(306.5, 84.62, 490.5), new Vector(258.5, 84.62, 490.5), new Vector(240.5, 81.5, 490.5),
+                        200, new Vector(282.5, 83.0, 490.5)),
+
+                TourStop.path(GUIDE, GUIDE_PORTRAIT, List.of(
+                                "Bunlar {bilek güreşi} masaları. Bir rakiple karşılıklı taburelere oturun, maç kendiliğinden başlar.",
+                                "Ekrana gelen mini oyunlarda {zıplama tuşuyla} rakibinin kolunu bastır. {3 turda 2} alan kazanır."),
+                        new Vector(260.5, 83.62, 479.5), new Vector(273.5, 83.62, 478.5), new Vector(268.5, 80.9, 482.5), 180),
+
+                TourStop.glide(GUIDE, GUIDE_PORTRAIT, List.of(
+                                "Burada da {XOX} masaları var. İki kişi karşılıklı oturur, sırayla hamle yapar.",
+                                "Üç işaretini ilk {yan yana} dizen kazanır. Kalkmak istersen {Shift}'e basman yeter."),
+                        List.of(
+                                new Vector(268.5, 84.62, 430.5),
+                                new Vector(257.5, 84.62, 430.0),
+                                new Vector(246.5, 84.62, 429.5),
+                                new Vector(235.5, 84.62, 429.0),
+                                new Vector(224.5, 84.62, 428.5)),
+                        List.of(
+                                new Vector(264.5, 80.5, 442.5),
+                                new Vector(253.5, 80.5, 442.5),
+                                new Vector(242.5, 80.5, 442.5),
+                                new Vector(231.5, 80.5, 442.5),
+                                new Vector(226.5, 80.5, 442.5)),
+                        260, new Vector(246.5, 83.0, 429.5)),
+
                 TourStop.path("Dede Korkut", "dedekorkut", List.of(
                                 "Gel otur evlat. Ben {Dede Korkut}. Bu diyarın yiğitlerini tanır, hünerlerini ölçerim.",
                                 "Verdiğim görevleri tamamlarsan {rütbe} atlarsın. Rütben yükseldikçe yeni kapılar açılır.",
