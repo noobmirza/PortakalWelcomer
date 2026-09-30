@@ -26,24 +26,18 @@ final class TourRoute {
 
                 TourStop.glide(GUIDE, GUIDE_PORTRAIT, List.of(
                                 "Burası {kasalar} alanı. Kasalar eşya vermez, ekipmanlarına {kostüm görünümü} kazandırır.",
-                                "Kasaların arkasındaki mankenler, o kasadan çıkabilecek kostümleri giyiyor. Kostümlerini {/skinler} ile yönetebilirsin."),
+                                "Kostümlerini {/skinler} ile yönetebilirsin."),
                         List.of(
                                 new Vector(496.5, 113.3, 564.5),
-                                new Vector(495.5, 113.0, 556.0),
                                 new Vector(496.0, 113.0, 547.0),
-                                new Vector(500.0, 113.0, 543.5),
                                 new Vector(506.5, 113.0, 543.0),
-                                new Vector(508.0, 113.0, 547.0),
                                 new Vector(508.5, 113.2, 556.0)),
                         List.of(
                                 new Vector(488.3, 112.3, 562.5),
-                                new Vector(487.5, 112.3, 555.5),
                                 new Vector(489.5, 112.3, 546.0),
-                                new Vector(494.0, 112.3, 538.5),
                                 new Vector(513.0, 112.3, 538.5),
-                                new Vector(517.5, 112.3, 546.5),
                                 new Vector(519.5, 112.3, 553.5)),
-                        380, new Vector(503.5, 111.5, 550.5)),
+                        200, new Vector(503.5, 111.5, 550.5)),
 
                 TourStop.dolly(GUIDE, GUIDE_PORTRAIT, List.of(
                                 "Bu {ışınlanma çukuruna} atlayan, dünyada rastgele bir yere düşer. Aynı yolculuğa {/rtp} ile de çıkabilirsin."),
@@ -54,32 +48,21 @@ final class TourRoute {
                                 "Kendine güveniyorsan gir, ama eşyalarını kaybetmeye hazır ol."),
                         new Vector(489.5, 117.6, 572.0), new Vector(489.5, 117.0, 577.5), 3.5, 0.8, 100, PLAZA),
 
-                TourStop.path(GUIDE, GUIDE_PORTRAIT, List.of(
-                                "Burası {Balıkçı Rıhtımı}. Bu koyda hamsiden iki tonluk {Kadim Ejder Balığı}'na kadar {21 tür} balık yaşar.",
-                                "Bu balıklar sadece sen {rıhtımın içindeyken} oltana gelir. Rıhtımın dışında deniz sıradan, eski usul balık verir.",
-                                "Denize girmene gerek yok, oltanı rıhtımdan at yeter. Gerisini buranın balıkçıları sana anlatır."),
-                        new Vector(453.5, 81.62, 675.5), new Vector(453.5, 81.62, 777.5), new Vector(453.5, 80.5, 809.5),
-                        260, new Vector(453.5, 80.0, 726.5)),
-
-                TourStop.path("Yaşlı Balıkçı", "bal_yasli", List.of(
-                                "Hoş geldin yolcu. Ben {Yaşlı Balıkçı}, kırk yıldır bu koyda balık tutarım.",
-                                "Balık nasıl tutulur, oltanın ve balığın üstündeki yazılar ne demek, merak ettiğin her şeyi bana sorabilirsin."),
-                        new Vector(452.5, 81.62, 784.5), new Vector(455.5, 80.62, 787.5), new Vector(457.6, 80.7, 789.6), 160),
-
-                TourStop.path("Olta Ustası", "bal_usta", List.of(
-                                "Ben {Olta Ustası}. Oltalar benden çıkar, ilk {Basit Olta} da benden hediye.",
-                                "Balık tuttukça ve para biriktirdikçe oltan {21 seviyeye} kadar yükselir. Tuttuğun balıkları da market değil, {ben alırım}."),
-                        new Vector(425.5, 80.62, 799.5), new Vector(425.5, 80.62, 806.0), new Vector(425.5, 80.7, 809.5), 160),
-
-                TourStop.path("Balık Bilgini", "bal_bilgin", List.of(
-                                "Ben {Balık Bilgini}. Bu sularda tuttuğun her türü deftere yazarım.",
-                                "Bir türün en ağırını tutarsan adın {sunucu rekoru} olarak kalır, herkes duyar."),
-                        new Vector(453.5, 80.62, 800.5), new Vector(453.5, 80.62, 806.0), new Vector(453.5, 80.7, 809.5), 160),
-
-                TourStop.path("Yemci", "bal_yemci", List.of(
-                                "Taze yem, taze! Ben {Yemci}. {Canlı} da var {cansız} da.",
-                                "Yem şart değil, ama iyi yem balığı çabuk getirir, kaçmasını da zorlaştırır."),
-                        new Vector(481.5, 80.62, 800.5), new Vector(481.5, 80.62, 806.0), new Vector(481.5, 80.7, 809.4), 160),
+                TourStop.glide(GUIDE, GUIDE_PORTRAIT, List.of(
+                                "Burası {Balıkçı Rıhtımı}. {21 tür} balık var, hamsiden {Kadim Ejder Balığı}'na kadar. Oltanı rıhtımdan atman yeter.",
+                                "Rıhtımın ucunda dört kişi var: {Yaşlı Balıkçı} sorularını yanıtlar, {Olta Ustası} olta satar ve balıklarını alır.",
+                                "{Balık Bilgini} sunucu rekorlarını tutar, {Yemci} de yem satar."),
+                        List.of(
+                                new Vector(453.5, 81.62, 675.5),
+                                new Vector(453.5, 81.62, 740.0),
+                                new Vector(453.5, 81.62, 777.5),
+                                new Vector(453.5, 82.5, 795.0)),
+                        List.of(
+                                new Vector(453.5, 80.5, 730.0),
+                                new Vector(453.5, 80.5, 780.0),
+                                new Vector(455.5, 81.5, 787.5),
+                                new Vector(453.5, 81.5, 806.0)),
+                        360, new Vector(453.5, 80.0, 750.0)),
 
                 TourStop.path("Şaman", "saman", List.of(
                                 "Ben {Şaman}. Görevlerimi ve eşya isteklerimi yerine getirenlere {özel eşyalar} veririm.",
@@ -92,27 +75,44 @@ final class TourRoute {
                         new Vector(306.5, 84.62, 490.5), new Vector(258.5, 84.62, 490.5), new Vector(240.5, 81.5, 490.5),
                         200, new Vector(282.5, 83.0, 490.5)),
 
-                TourStop.path(GUIDE, GUIDE_PORTRAIT, List.of(
-                                "Bunlar {bilek güreşi} masaları. Bir rakiple karşılıklı taburelere oturun, maç kendiliğinden başlar.",
-                                "Ekrana gelen mini oyunlarda {zıplama tuşuyla} rakibinin kolunu bastır. {3 turda 2} alan kazanır."),
-                        new Vector(260.5, 83.62, 479.5), new Vector(273.5, 83.62, 478.5), new Vector(268.5, 80.9, 482.5), 180),
+                TourStop.glide(GUIDE, GUIDE_PORTRAIT, List.of(
+                                "Bunlar {bilek güreşi} masaları. Bir rakiple karşılıklı oturursun, maç kendiliğinden başlar. {3 turda 2} alan kazanır.",
+                                "Ötede {XOX} masaları var. Üç işaretini ilk {yan yana} dizen kazanır."),
+                        List.of(
+                                new Vector(261.5, 82.12, 479.5),
+                                new Vector(272.5, 82.12, 478.5),
+                                new Vector(270.5, 82.62, 455.0),
+                                new Vector(268.5, 82.62, 430.5),
+                                new Vector(246.5, 82.62, 429.5),
+                                new Vector(226.5, 82.62, 428.5)),
+                        List.of(
+                                new Vector(263.5, 80.9, 482.5),
+                                new Vector(271.5, 80.9, 482.5),
+                                new Vector(266.0, 80.5, 445.0),
+                                new Vector(264.5, 80.5, 442.5),
+                                new Vector(242.5, 80.5, 442.5),
+                                new Vector(226.5, 80.5, 442.5)),
+                        380, new Vector(268.5, 82.0, 455.0)),
 
                 TourStop.glide(GUIDE, GUIDE_PORTRAIT, List.of(
-                                "Burada da {XOX} masaları var. İki kişi karşılıklı oturur, sırayla hamle yapar.",
-                                "Üç işaretini ilk {yan yana} dizen kazanır. Kalkmak istersen {Shift}'e basman yeter."),
+                                "Parkın güneyi kart ve masa oyunlarına ayrılmış. Batıda {Pişti} ve {Papaz Kimde} masaları var.",
+                                "Ortada {UNO} ve {101 Okey} oynanır, en doğuda ise {satranç} masaları var.",
+                                "Hepsinde rakip bulunca oyun kendiliğinden başlar. Arkadaşlarınla ya da yabancılarla oynayabilirsin."),
                         List.of(
-                                new Vector(268.5, 84.62, 430.5),
-                                new Vector(257.5, 84.62, 430.0),
-                                new Vector(246.5, 84.62, 429.5),
-                                new Vector(235.5, 84.62, 429.0),
-                                new Vector(224.5, 84.62, 428.5)),
+                                new Vector(198.5, 84.6, 530.5),
+                                new Vector(210.5, 84.6, 530.5),
+                                new Vector(240.5, 84.6, 530.5),
+                                new Vector(267.5, 84.6, 530.5),
+                                new Vector(279.5, 84.6, 530.5),
+                                new Vector(286.5, 84.6, 527.5)),
                         List.of(
-                                new Vector(264.5, 80.5, 442.5),
-                                new Vector(253.5, 80.5, 442.5),
-                                new Vector(242.5, 80.5, 442.5),
-                                new Vector(231.5, 80.5, 442.5),
-                                new Vector(226.5, 80.5, 442.5)),
-                        260, new Vector(246.5, 83.0, 429.5)),
+                                new Vector(201.5, 80.6, 522.5),
+                                new Vector(213.5, 80.6, 538.5),
+                                new Vector(252.5, 80.6, 530.5),
+                                new Vector(260.5, 80.6, 526.5),
+                                new Vector(275.5, 80.6, 536.5),
+                                new Vector(291.5, 80.6, 527.5)),
+                        420, new Vector(246.5, 82.0, 530.5)),
 
                 TourStop.path("Dede Korkut", "dedekorkut", List.of(
                                 "Gel otur evlat. Ben {Dede Korkut}. Bu diyarın yiğitlerini tanır, hünerlerini ölçerim.",
