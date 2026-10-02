@@ -10,6 +10,7 @@ import org.bukkit.entity.Player;
 
 import java.util.function.Predicate;
 
+// Menzil engelinden sızan, oyuncunun kendi entity id'sine giden saldırı ve etkileşim paketlerini düşürür.
 public final class SelfInteractGuard extends PacketListenerAbstract {
     private final Predicate<Player> guarded;
 

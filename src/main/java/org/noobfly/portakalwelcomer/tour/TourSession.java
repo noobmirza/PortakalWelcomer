@@ -16,6 +16,7 @@ import org.noobfly.portakalwelcomer.util.ChatStyle;
 
 import java.util.List;
 
+// Tek oyuncunun turu: kamera sahte entity, gerçek oyuncu görünmez, donuk ve ölümsüz; kamera uzak duraklara kesmeyle gider.
 final class TourSession {
     private static final double EYE_HEIGHT = 1.62;
     private static final int SEND_INTERVAL_TICKS = 2;
@@ -23,6 +24,7 @@ final class TourSession {
     private static final int FOLLOW_INTERVAL_TICKS = 10;
     private static final int MIN_STOP_TICKS = 30;
     private static final double HURRY_TICKS = 20.0;
+    // Bu mesafeden uzak duraklara uçulmaz, kesilir; duvarların içinden geçmesin.
     private static final double CUT_DISTANCE = 60.0;
     private static final int CUT_HOLD_TICKS = 20;
     private static final int FALLBACK_PAGE_TICKS = 100;

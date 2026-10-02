@@ -8,6 +8,7 @@ import org.bukkit.entity.Player;
 
 import java.util.List;
 
+// Kamera aktifken etkileşim menzilini sıfırlar; istemci kendi bedenine tıklayıp "Cannot interact with self" kick/Vulcan flag yemesin.
 public final class Reach {
     private static final List<Attribute> ATTRIBUTES = List.of(Attribute.ENTITY_INTERACTION_RANGE, Attribute.BLOCK_INTERACTION_RANGE);
 

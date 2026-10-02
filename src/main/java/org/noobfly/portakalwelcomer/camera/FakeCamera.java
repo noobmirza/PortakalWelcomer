@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+// Sadece tek oyuncunun istemcisinde var olan item display; Set Camera paketiyle o oyuncunun bakış noktası olur.
 public final class FakeCamera {
     private static final int POS_ROT_INTERPOLATION_INDEX = 10;
 

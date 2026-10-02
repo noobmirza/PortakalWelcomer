@@ -32,6 +32,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
+// Turdaki oyuncunun zırh ve elindeki eşyayı diğer oyunculara (ve kendi istemcisine) boş gösterir.
 public final class EquipmentHider extends PacketListenerAbstract implements Listener {
     private static final EquipmentSlot[] SLOTS = {
             EquipmentSlot.HAND, EquipmentSlot.OFF_HAND,

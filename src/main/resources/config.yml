@@ -1,8 +1,12 @@
 tanitim:
+  # ilk girişte tur otomatik başlar, false ise sadece /pwc tanitim ile
   ilk-giriste: true
 
 olum-kamerasi:
+  # ölen oyuncu ölüm ekranı yerine birkaç saniye cesedin etrafında dönen kamerayı izler
   acik: true
   sure-saniye: 7
+  # ItemsAdder glifli ölüm ekranı, false ise sade title
   ozel-ekran: true
+  # ölen oyuncuya çalan ses, boşsa yok
   ses: "portakalsounds:olumcani"

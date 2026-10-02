@@ -10,6 +10,7 @@ import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.noobfly.portakalwelcomer.camera.CameraPose;
 
+// İstemci sesi kameradan duyar; turdaki oyuncunun konumundan çalan sesleri kameraya taşır.
 final class TourSoundListener extends PacketListenerAbstract {
     private static final double AT_PLAYER_SQ = 1.5 * 1.5;
 
